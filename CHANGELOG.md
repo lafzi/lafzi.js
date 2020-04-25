@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/sprabowo/lafzi.js/compare/v0.0.9...v0.0.10) (2020-04-25)
+
+
+### Bug Fixes
+
+* command publish npm ([5b856a7](https://github.com/sprabowo/lafzi.js/commit/5b856a72fdfb0fc7898c8931cf03b211adefc02c))
+
 ### [0.0.9](https://github.com/sprabowo/lafzi.js/compare/v0.0.8...v0.0.9) (2020-04-25)
 
 ### [0.0.8](https://github.com/sprabowo/lafzi.js/compare/v0.0.7...v0.0.8) (2020-04-25)
