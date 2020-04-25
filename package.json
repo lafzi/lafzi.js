@@ -25,7 +25,8 @@
     "release": "yarn test && standard-version && git push --follow-tags && npm publish"
   },
   "files": [
-    "dist"
+    "dist",
+    "data"
   ],
   "dependencies": {
     "fs": "^0.0.1-security"
