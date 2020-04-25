@@ -1,0 +1,52 @@
+{
+  "name": "lafzi.js",
+  "version": "0.0.1",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "devDependencies": {
+    "@ava/babel": "^1.0.1",
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.9.0",
+    "ava": "^3.7.1",
+    "esm": "^3.2.25",
+    "rollup": "^1.0.0",
+    "rollup-plugin-babel": "^4.2.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "standard-version": "^7.1.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "release": "yarn test && standard-version"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "description": "[![Greenkeeper badge](https://badges.greenkeeper.io/rollup/rollup-starter-lib.svg)](https://greenkeeper.io/)",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "lafzi",
+    "quran",
+    "search-engine"
+  ],
+  "author": "Sigit Prabowo <sgt@prbw.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sprabowo/lafzi.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sprabowo/lafzi.js/issues"
+  },
+  "homepage": "https://github.com/sprabowo/lafzi.js#readme"
+}
