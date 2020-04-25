@@ -22,7 +22,8 @@
     "dev": "rollup -c -w",
     "test": "ava",
     "test:watch": "ava --watch",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+    "release": "yarn test && standard-version && git push --follow-tags",
+    "publish": "npm login && npm publish"
   },
   "files": [
     "dist",
