@@ -8,7 +8,7 @@ yarn add lafzi.js
 ```
 
 ### Options
-```
+```js
 {
   query: 'kunfayakun',
   mode: 'v', // "v", "nv"
@@ -19,9 +19,9 @@ yarn add lafzi.js
 ```
 
 ### Usage
-```
+```js
 import Lafzi from 'lafzi.js' // commonjs
-# import Lafzi from 'lafzi.js/dist/index.esm' // es module
+// import Lafzi from 'lafzi.js/dist/index.esm' // es module
 const opt = {
     query: 'kunfayakun'
 }
@@ -30,6 +30,9 @@ Lafzi(opt).then((res) => {
 })
 ```
 
+### Example
+https://repl.it/@sprabowo/lafzijs-demo
+
 ## License
 
-[MIT](LICENSE).
+[MIT](LICENSE)
