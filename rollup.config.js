@@ -51,7 +51,6 @@ export default [
       format: "es",
     },
     plugins: [
-      resolve(),
       babel({
         babelrc: false,
         presets: [
