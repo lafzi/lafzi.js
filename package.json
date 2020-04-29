@@ -25,8 +25,8 @@
     "test:watch": "ava --watch",
     "release:data": "node .uncompressed_data/index.js",
     "release:cleanup": "node .uncompressed_data/cleanup.js",
-    "release:version": "npm run test && npm run release:cleanup && standard-version && git push --follow-tags",
-    "release": "npm run release:data && npm run release:version && npm run build && npm run publish:npm",
+    "release:version": "npm run test && npm run release:cleanup && npm run build && standard-version && git push --follow-tags",
+    "release": "npm run release:data && npm run release:version && npm run publish:npm",
     "publish:npm": "npm login && npm publish"
   },
   "files": [
