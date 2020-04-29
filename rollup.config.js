@@ -12,7 +12,7 @@ export default [
   // `file` and `format` for each target)
   {
     input: "src/main.js",
-    external: "fs",
+    external: ["fs", "lzutf8"],
     output: {
       dir: "dist",
       entryFileNames: "index.cjs.js",
@@ -43,7 +43,7 @@ export default [
   },
   {
     input: "src/main.js",
-    external: "fs",
+    external: ["fs", "lzutf8"],
     output: {
       dir: "dist",
       entryFileNames: "index.esm.js",

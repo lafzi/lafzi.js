@@ -23,7 +23,10 @@
     "dev": "rollup -c -w",
     "test": "ava",
     "test:watch": "ava --watch",
-    "release": "yarn test && standard-version && git push --follow-tags",
+    "release:data": "node .uncompressed_data/index.js",
+    "release:cleanup": "node .uncompressed_data/cleanup.js",
+    "release:version": "npm run test && npm run release:cleanup && standard-version && git push --follow-tags",
+    "release": "npm run release:data && npm run release:version && npm run build && npm run publish:npm",
     "publish:npm": "npm login && npm publish"
   },
   "files": [
@@ -31,7 +34,8 @@
     "data"
   ],
   "dependencies": {
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "lzutf8": "^0.5.5"
   },
   "description": "[![Greenkeeper badge](https://badges.greenkeeper.io/rollup/rollup-starter-lib.svg)](https://greenkeeper.io/)",
   "directories": {
