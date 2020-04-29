@@ -11,7 +11,7 @@ fs
  .forEach((file) => {
   let tmp = fs.readFileSync(__dirname + '/' + file, 'utf8')
   let compressedBytes = LZUTF8.compress(tmp)
-  let compressedBytesAsDecimalString = LZUTF8.Encoding.BinaryString.encode(compressedBytes)
+  let compressedBytesAsDecimalString = LZUTF8.encodeStorageBinaryString(compressedBytes)
   fs.writeFileSync(__dirname + '/../data/lzutf8.' + file, compressedBytesAsDecimalString,'utf8')
  })
 

@@ -5,7 +5,7 @@ let textFile
 let fileName = 'posmap_nv.txt'
 
 let tmp = fs.readFileSync(__dirname + '/../data/lzutf8.' + fileName, 'utf8')
-let decompressedBytesAsDecimalString = LZUTF8.Encoding.BinaryString.decode(tmp)
+let decompressedBytesAsDecimalString = LZUTF8.decodeStorageBinaryString(tmp)
 let decompressedBytes = LZUTF8.decompress(decompressedBytesAsDecimalString)
 textFile = decompressedBytes
 
